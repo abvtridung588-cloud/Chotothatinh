@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f97316"><title>Chotothatinh V12 Mới</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:#f6f7f9;color:#18212f}a{text-decoration:none;color:inherit}.wrap{max-width:1100px;margin:auto;padding:0 16px}
+header{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid #eee}.nav{height:64px;display:flex;align-items:center;gap:10px}.logo{font-weight:900;font-size:20px;display:flex;align-items:center;gap:9px}.badge{width:40px;height:40px;border-radius:12px;background:#ff8a00;display:grid;place-items:center;font-size:22px}.links{margin-left:auto;display:flex;gap:18px;font-weight:700;color:#4b5563}.post{background:#f97316;color:#fff;padding:10px 14px;border-radius:11px;font-weight:800}
+.hero{padding:48px 0;background:linear-gradient(135deg,#fff7ed,#fff,#ecfdf5)}.hero h1{font-size:clamp(38px,7vw,62px);line-height:1.02;letter-spacing:-2px;margin:15px 0}.hero h1 span{color:#f97316}.hero p{max-width:700px;font-size:18px;line-height:1.6;color:#5b6472}.pill{display:inline-block;background:#fff;border:1px solid #fed7aa;color:#c2410c;padding:7px 11px;border-radius:99px;font-weight:800;font-size:13px}
+.search{display:flex;background:#fff;border:1px solid #eee;padding:6px;border-radius:16px;max-width:720px;box-shadow:0 10px 30px #11182712}.search input{flex:1;border:0;outline:0;padding:13px;font-size:16px;min-width:0}.search button{border:0;background:#111827;color:#fff;border-radius:11px;padding:0 18px;font-weight:800}
+section{padding:38px 0}.head{margin-bottom:18px}.head h2{margin:0;font-size:28px}.muted{color:#6b7280}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.cat,.card{background:#fff;border:1px solid #e7e9ed;border-radius:18px}.cat{text-align:center;padding:20px 8px}.cat .ico{font-size:34px}.cat b{display:block;margin-top:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.pic{height:145px;background:linear-gradient(135deg,#e5e7eb,#f8fafc);display:grid;place-items:center;font-size:55px}.body{padding:15px}.tag{font-size:11px;font-weight:800;color:#047857;background:#ecfdf5;padding:5px 8px;border-radius:99px}.body h3{margin:10px 0 5px}.price{font-weight:900;color:#ea580c;font-size:19px}.loc{color:#6b7280;font-size:13px;margin-top:6px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service{background:#fff;border:1px solid #e7e9ed;border-radius:18px;padding:20px}.service .ico{font-size:29px}.service h3{margin:10px 0 6px}.service p{color:#6b7280;line-height:1.5}
+.cta{background:#111827;color:#fff;border-radius:22px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:18px}.cta h2{margin:0 0 6px}.cta p{color:#cbd5e1}.cta a{background:#f97316;color:#fff;padding:12px 16px;border-radius:11px;font-weight:900;white-space:nowrap}
+footer{background:#111827;color:#cbd5e1;padding:28px 0;margin-top:30px}.foot{display:flex;justify-content:space-between}
+@media(max-width:750px){.links{display:none}.grid{grid-template-columns:repeat(2,1fr)}.cards,.services{grid-template-columns:1fr}.cta{display:block}.cta a{display:inline-block;margin-top:10px}.hero{padding:38px 0}.hero p{font-size:16px}}
+</style></head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#"><span class="badge">🚗</span>Chotothatinh</a><nav class="links"><a href="#danhmuc">Danh mục</a><a href="#tin">Tin đăng</a><a href="#dichvu">Dịch vụ</a></nav><a class="post" href="#dangtin">＋ Đăng tin</a></div></header>
+<section class="hero"><div class="wrap"><span class="pill">🟢 V12 MỚI · HÀ TĨNH</span><h1>Mua bán <span>xe & phụ tùng</span><br>đơn giản hơn.</h1><p>Nơi kết nối người mua, người bán và dịch vụ ô tô tại Hà Tĩnh. Giao diện mới tối ưu cho điện thoại, tìm kiếm nhanh và dễ đăng tin.</p>
+<form class="search" onsubmit="return searchNow(event)"><input id="q" placeholder="🔎 Tìm xe, phụ tùng, dịch vụ..."><button>Tìm kiếm</button></form></div></section>
+<section id="danhmuc"><div class="wrap"><div class="head"><h2>Danh mục nổi bật</h2><div class="muted">Chọn đúng thứ bạn đang cần</div></div><div class="grid">
+<a class="cat" href="#tin"><div class="ico">🚗</div><b>Xe con</b></a><a class="cat" href="#tin"><div class="ico">🚚</div><b>Xe tải</b></a><a class="cat" href="#tin"><div class="ico">🚌</div><b>Xe khách</b></a><a class="cat" href="#tin"><div class="ico">🚜</div><b>Xe chuyên dụng</b></a><a class="cat" href="#dichvu"><div class="ico">🔧</div><b>Phụ tùng</b></a><a class="cat" href="#tin"><div class="ico">🏍️</div><b>Xe máy</b></a><a class="cat" href="#dichvu"><div class="ico">🛠️</div><b>Sửa chữa</b></a><a class="cat" href="#dichvu"><div class="ico">🔍</div><b>Kiểm tra xe</b></a>
+</div></div></section>
+<section id="tin"><div class="wrap"><div class="head"><h2>Tin đăng mới</h2><div class="muted">Khu vực hiển thị tin bán xe và phụ tùng</div></div><div class="cards">
+<article class="card"><div class="pic">🚙</div><div class="body"><span class="tag">ĐANG BÁN</span><h3>Ô tô cũ — thông tin rõ ràng</h3><div class="price">Liên hệ</div><div class="loc">📍 Hà Tĩnh</div></div></article>
+<article class="card"><div class="pic">🔩</div><div class="body"><span class="tag">PHỤ TÙNG</span><h3>Phụ tùng ô tô cũ</h3><div class="price">Liên hệ</div><div class="loc">📍 Hà Tĩnh</div></div></article>
+<article class="card"><div class="pic">🛻</div><div class="body"><span class="tag">XE TẢI</span><h3>Xe tải đã qua sử dụng</h3><div class="price">Liên hệ</div><div class="loc">📍 Hà Tĩnh</div></div></article>
+</div></div></section>
+<section id="dichvu"><div class="wrap"><div class="head"><h2>Phụ tùng & dịch vụ</h2><div class="muted">Các chức năng có thể kết nối dữ liệu thật ở bước tiếp theo</div></div><div class="services">
+<div class="service"><div class="ico">🔎</div><h3>Tìm phụ tùng</h3><p>Tìm theo tên phụ tùng hoặc dòng xe.</p></div>
+<div class="service"><div class="ico">🔢</div><h3>Tra cứu VIN</h3><p>Khu vực sẵn sàng tích hợp chức năng tra cứu VIN.</p></div>
+<div class="service"><div class="ico">🧰</div><h3>Kiểm tra xe cũ</h3><p>Kết nối dịch vụ kiểm tra xe trước khi mua.</p></div>
+</div></div></section>
+<section id="dangtin"><div class="wrap"><div class="cta"><div><h2>Bạn có xe hoặc phụ tùng cần bán?</h2><p>Đăng tin để tiếp cận người mua tại Hà Tĩnh.</p></div><a href="javascript:alert('Chức năng đăng tin sẽ được kết nối với hệ thống ở bước tiếp theo.')">Đăng tin ngay →</a></div></div></section>
+<footer><div class="wrap foot"><div><b>🚗 Chotothatinh</b><br><small>Mua bán xe · phụ tùng · dịch vụ tại Hà Tĩnh</small></div><small>V12 · Giao diện mới</small></div></footer>
+<script>function searchNow(e){e.preventDefault();let q=document.getElementById('q').value.trim();if(!q){location.hash='tin';return false}alert('Tìm kiếm: '+q+'\nChức năng dữ liệu thật sẽ kết nối ở bước tiếp theo.');return false}</script>
+</body></html>
