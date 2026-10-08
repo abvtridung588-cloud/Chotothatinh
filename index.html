@@ -227,11 +227,6 @@ input[type="tel"][maxlength="10"]{letter-spacing:.4px}
 .money-help{margin:-2px 2px 12px;color:#8b0000;font-size:13px;font-weight:700;line-height:1.45}.money-help b{color:#d60000}
 
 .phone-call-wrap{display:flex;gap:14px;align-items:center;width:100%;margin-top:14px}.phone-call-wrap .phone-input{flex:1;min-width:0}.phone-call-btn{width:72px;height:58px;flex:0 0 72px;border-radius:16px;background:#e53935;color:#fff!important;text-decoration:none!important;display:flex!important;align-items:center;justify-content:center;font-size:32px;line-height:1;box-shadow:0 3px 0 rgba(0,0,0,.12);cursor:pointer;pointer-events:auto;touch-action:manipulation}.phone-call-btn.disabled{opacity:.45;background:#aaa;pointer-events:none}.phone-error{min-height:20px;margin:5px 0 0;color:#d32f2f;font-weight:700;font-size:14px}.phone-input{font-variant-numeric:tabular-nums}
-
-<style>
-.dang-tin-ngay{animation:dangTinNgayBlink .55s steps(1,end) infinite;font-weight:900;}
-@keyframes dangTinNgayBlink{0%,49%{opacity:1}50%,100%{opacity:.15}}
-</style>
 </style>
 
 
@@ -625,6 +620,10 @@ body{padding-top:calc(min(100vw, 1100px) * .255 + 4px);}
   color:#1683e8 !important;
   font-weight:800 !important;
 }
+<style id="v45-fault-text-highlight">
+/* V45: chỉ tô chữ CÓ LỖI trong ô vàng; không đổi màu nền hay chức năng. */
+.fault-text-highlight{color:#e57373 !important;font-weight:900;}
+</style>
 </style>
 </head>
 <body>
@@ -660,11 +659,11 @@ body{padding-top:calc(min(100vw, 1100px) * .255 + 4px);}
   <section class="car-listing-reference" aria-label="Đăng tin bán xe">
   <a class="car-box car-box-green" href="#sell" onclick="openVehicleListing('normal'); return true;">
     <div class="car-title">🚗 ĐĂNG TIN: BÁN XE Ô TÔ KHÔNG LỖI</div>
-    <div class="car-subtitle dang-tin-ngay">✍️ ĐĂNG TIN NGAY</div>
+    <div class="car-subtitle">Xe không lỗi · Chọn hãng xe · Chọn dòng xe</div>
   </a>
   <a class="car-box car-box-yellow" href="#sell-fault">
-    <div class="car-title">🚗 ĐĂNG TIN: BÁN XE Ô TÔ CÓ LỖI</div>
-    <div class="car-subtitle dang-tin-ngay">✍️ ĐĂNG TIN NGAY</div>
+    <div class="car-title">🚗 ĐĂNG TIN: BÁN XE Ô TÔ <span class="fault-text-highlight">CÓ LỖI</span></div>
+    <div class="car-subtitle">Khai báo lỗi · Chọn hãng xe · Chọn dòng xe</div>
   </a>
   <a class="car-box car-box-red" href="#motorcycle" onclick="openVehicleListing('motorcycle'); return true;">
     <div class="car-title">🏍️ ĐĂNG TIN: BÁN XE MÁY – XE ĐIỆN – XE CÁC LOẠI</div>
